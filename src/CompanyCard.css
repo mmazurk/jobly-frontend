@@ -1,0 +1,9 @@
+.custom-card {
+    background-color: lightgrey; /* For the light-grey background */
+    border: 1px solid black; /* For the black borders */
+  }
+  
+  /* Optional: If you also want the card content background to be light-grey */
+  .custom-card .card-body {
+    background-color: lightgrey;
+  }
