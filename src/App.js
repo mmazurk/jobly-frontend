@@ -48,7 +48,6 @@ function App() {
     }
   }
 
-
   // I can speed up the loading by using Promise.all()
   // I also need to add error handling to this
   async function getAllData() {
@@ -77,7 +76,7 @@ function App() {
         <Route path="/companies" element={<Items itemList={data.companies} cardType="companies" />} />
         <Route path="/companies/:handle" element={<CompanyDetails />} />
         <Route path="/jobs" element={<Items itemList={data.jobs} cardType="jobs" />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login login={login} />} />
         <Route path="/logout" element={<Logout logout={logout} />} />
         <Route path="/signup" element={<SignUp signUp={signUp}/>} />
         <Route path="/profile" element={<EditProfile />} />

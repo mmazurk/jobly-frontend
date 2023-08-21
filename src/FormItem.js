@@ -5,7 +5,7 @@ const FormItem = ({ field, value, handleChange }) => {
         <input
           className="form-control"
           id={field}
-          type={field="password" ? "password": "text"}
+          type={field === "password" ? "password": "text"}
           name={field}
           value={value}
           onChange={handleChange}
